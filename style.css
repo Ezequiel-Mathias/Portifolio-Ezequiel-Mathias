@@ -76,17 +76,19 @@ header nav h1{
 }
 
 .container-card-project{
-    width: 417px;
-    height: 518px;
+    width: clamp( 20rem , 50vw, 24rem);
+    height: clamp( 27rem , 65vw, 32.4rem);
     background-color: #D9D9D9;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-width: 20rem;
 }
 
 .card-project h2{
     text-align: center;
+    font-size: clamp(1.3rem , 3vw , 1.5rem);
     padding-top: 24px;
     margin-bottom: 90px;
 }
@@ -111,11 +113,24 @@ header nav h1{
     transform: scale(1.1);
 }
 
-.card{
+.container-cards-frontend-web{
     margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
 }
 
+/* .teste{
+    height: 50px;
+    background-color: #C22CB3;
 
+    
+    border-radius: 16px;
+}
+ */
 
 
 
