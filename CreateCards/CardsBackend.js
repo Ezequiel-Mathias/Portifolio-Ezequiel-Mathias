@@ -64,9 +64,11 @@ const TrainingCardBackend = (cardbackend) => {
         
     </div>
 
-    <div class="more-information">
+    <div class="more-information-backend">
         <p>Mais informações</p>
     </div>
+
+    
     
     `
 
@@ -82,5 +84,7 @@ const ToLoadCardBackend = (projects) => {
     container.replaceChildren(...cards)
 
 }
+
+
 
 ToLoadCardBackend(ProjectsBackend)

@@ -64,7 +64,7 @@ const TrainingCardMobile = (cardmobile) => {
         
     </div>
 
-    <div class="more-information">
+    <div class="more-information-mobile">
         <p>Mais informações</p>
     </div>
     

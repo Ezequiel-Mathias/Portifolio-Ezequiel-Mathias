@@ -6,12 +6,13 @@
 }
 
 header{
-    margin-top: 0px;
+   
     background-color: #051923;
     height: 72px;
-    width: 100%;
+    min-width: 100%;
     padding-left: clamp(1rem , 5vw , 4.6rem);
     padding-right: clamp(1rem , 5vw , 4.6rem); 
+    
 }
 
 header nav{
@@ -31,6 +32,7 @@ header nav h1{
     height: 72px;
     display: flex;
     align-items: center;
+    
 }
 
 .menu-contacts {
@@ -83,40 +85,42 @@ header nav h1{
 }
 
 .container-card{
-    width: clamp( 20rem , 50vw, 24rem);
-    height: clamp( 27rem , 65vw, 32.4rem);
+    width: clamp( 17rem , 50vw, 24rem);
+    height: clamp( 26rem , 65vw, 32.4rem);
     background-color: #D9D9D9;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 20rem;
+    min-width: 17rem;
     
 }
 
 .card-project h2{
     text-align: center;
-    font-size: clamp(1.3rem , 3vw , 1.5rem);
+    font-size: clamp(1.2rem , 3vw , 1.5rem);
     padding-top: 24px;
     margin-bottom: 90px;
 }
 
-.more-information {
+.more-information-backend 
+, .more-information-mobile 
+, .more-information-web {
     background-color: #051923;
     border-radius: 16px;
     height: 41px;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;   
-}
-
-.more-information p{
+    cursor: pointer;
     color: white;
-    font-weight: bold; 
+    font-weight: bold;    
 }
 
-.more-information:hover > p{
+
+.more-information-backend:hover > p,
+ .more-information-mobile:hover > p,
+ .more-information-web:hover > p  {
     text-decoration: underline;
     transform: scale(1.1);
 }
@@ -137,14 +141,115 @@ header nav h1{
 
 footer{
     background-color: #051923;
-    height: 60px;
+    height: 266px;
+    margin-top: 72px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .menu-contacts {
+    width: max-content;
+    margin-left: -10px;
+    margin-top: 8px;
+    display: flex;
+    gap: clamp(0rem , 0.6vw , 0.5rem);
+    margin-right: 10px;
+}
+
+
+
+.about , .contacts{
+    width: clamp( 10rem , 30vw , 20rem);
+    word-wrap: break-word;
+    margin-left: 8px;
+    
+    
+}
+
+.about h1 , .contacts h1 {
+    margin-top: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 8px;
+    font-size: clamp(1.1rem , 3vw , 1.5rem);
+}
+
+.about p , .contacts p{
+    margin-left: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: clamp(0.9rem , 2vw , 1rem);
+}
+
+.container-information-web{
+    visibility: hidden;
+    margin-top: 54px;
+    width: clamp( 17rem , 50vw, 24rem);
+    height: clamp( 23rem , 59vw, 29rem);
+    border-radius: 16px;
+    background-color: #051923;
+    position: absolute; 
+    padding: 24px 24px 0px 24px;
+    color: rgb(255, 255, 255);
+    
+    
+    
+}
+
+.container-information-web h3{
+    font-size: clamp(1.2rem , 2.5vw , 1.3rem);
+    
+}    
+
+.container-information-web p{
+    font-weight: bolder;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: clamp(0.9rem , 2.4vw , 1.2rem);
+}   
+
+.container-buttons{
+    display: flex;
+    gap: 40px;
     margin-top: 72px;
 }
+
+.button-page-or-page-github{
+    width: 151px;
+    height: 41px;
+    background-color: #006494;
+    border-radius: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.container-information-web {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container-close-information img{
+    width: 16px;
+    cursor: pointer;
+}
+
+.container-close-information{
+    display: flex;
+    justify-content: end;
+}
+
+
+
 
 @media (max-width: 1025px) {
     .container-cards-web , .container-cards-mobile , 
     .container-cards-backend{
         justify-content: center;
+        margin: 0px;
     }
 
 }
