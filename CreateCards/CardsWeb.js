@@ -112,11 +112,11 @@ const ToLoadCardWeb = (projects) => {
 ToLoadCardWeb(ProjectsWeb)
 
 
-const btnMoreInformationWeb = document.querySelectorAll('.more-information-web')
+/* const btnMoreInformationWeb = document.querySelector('.more-information-web')
 
-const CardInformationWeb = document.querySelectorAll('.container-information-web')
+const CardInformationWeb = document.querySelector('.container-information-web')
 
-const CloseInformationWeb = document.querySelectorAll('.container-close-information img')
+const CloseInformationWeb = document.querySelector('.container-close-information img')
 
 btnMoreInformationWeb.addEventListener('click', function () {
 
@@ -128,6 +128,12 @@ CloseInformationWeb.addEventListener('click', function () {
 
     CardInformationWeb.style.visibility = 'hidden'
 
+}) */
+
+const CardInformationWeb = document.getElementsByClassName("container-information-web")
+
+$('.more-information-web').click(function(e){
+	CardInformationWeb.style.visibility = 'visible'
 })
 
 
