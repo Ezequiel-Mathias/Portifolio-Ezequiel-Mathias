@@ -17,7 +17,7 @@ const ProjectsWeb = [
         id: '2',
         nome: 'Site Cltone Pixabey',
         video: 'teste',
-        tecnologias: 'teste, teste',
+        tecnologias: 'teste333, teste333',
         funcaoExercida: 'FrontEnd',
         descricao: 'lsda,k~çsdakkkkkkkkkkkkk',
         pagina: '',
@@ -28,7 +28,7 @@ const ProjectsWeb = [
         id: '2',
         nome: 'Site Cltone Pixabey',
         video: 'teste',
-        tecnologias: 'teste, teste',
+        tecnologias: 'teste222, teste222',
         funcaoExercida: 'FrontEnd',
         descricao: 'lsda,k~çsdakkkkkkkkkkkkk',
         pagina: '',
@@ -39,7 +39,7 @@ const ProjectsWeb = [
         id: '2',
         nome: 'Site Cltone Pixabey',
         video: 'teste',
-        tecnologias: 'teste, teste',
+        tecnologias: 'teste111, teste111',
         funcaoExercida: 'FrontEnd',
         descricao: 'lsda,k~çsdakkkkkkkkkkkkk',
         pagina: '',
@@ -63,10 +63,10 @@ const TrainingCardWeb = (cardweb) => {
     </div>
 
     <div class="more-information-web">
+        
         <p>Mais informações</p>
-    </div>
-    
-    <div class="container-information-web"> 
+
+        <div class="container-information-web"> 
 
         <div class="container-close-information">
             <img src="./Icons/close.svg" alt="">
@@ -74,7 +74,7 @@ const TrainingCardWeb = (cardweb) => {
         
         <div class="information-web"> 
         <h3>Tecnologias:</h3>
-        <p>HTML5, CSS, Javascript</p>
+        <p>${cardweb.tecnologias}</p>
 
 
         <h3>Função exercida:</h3>
@@ -91,6 +91,10 @@ const TrainingCardWeb = (cardweb) => {
         </div>
         
     </div>    
+    
+    </div>
+    
+   
 
     `
 
@@ -112,29 +116,23 @@ const ToLoadCardWeb = (projects) => {
 ToLoadCardWeb(ProjectsWeb)
 
 
-/* const btnMoreInformationWeb = document.querySelector('.more-information-web')
 
-const CardInformationWeb = document.querySelector('.container-information-web')
+/* const teste = document.querySelectorAll('.container-information-web')
+const btn = document.querySelector('.more-information-web')
 
-const CloseInformationWeb = document.querySelector('.container-close-information img')
+console.log(teste) */
 
-btnMoreInformationWeb.addEventListener('click', function () {
-
-    CardInformationWeb.style.visibility = 'visible'
+/* btn.addEventListener('click' , () => {
+    console.log('aaaaa')
+    teste.style.visibility = 'visible'
 })
+ */
+/*  $('.more-information-web').on('click', function(){
+    teste = style.visibility = 'visible'
+    
+ }); */
+ 
 
-CloseInformationWeb.addEventListener('click', function () {
-
-
-    CardInformationWeb.style.visibility = 'hidden'
-
-}) */
-
-const CardInformationWeb = document.getElementsByClassName("container-information-web")
-
-$('.more-information-web').click(function(e){
-	CardInformationWeb.style.visibility = 'visible'
-})
 
 
 

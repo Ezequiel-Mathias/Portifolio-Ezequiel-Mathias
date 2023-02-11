@@ -112,7 +112,6 @@ header nav h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     color: white;
     font-weight: bold;    
 }
@@ -182,7 +181,6 @@ footer .menu-contacts {
 }
 
 .container-information-web{
-    visibility: hidden;
     margin-top: 54px;
     width: clamp( 17rem , 50vw, 24rem);
     height: clamp( 23rem , 59vw, 29rem);
@@ -191,7 +189,18 @@ footer .menu-contacts {
     position: absolute; 
     padding: 24px 24px 0px 24px;
     color: rgb(255, 255, 255);
+    transform: translateY(-240px);
+    opacity: 0;
+    transition: 0.1s;
+    visibility: hidden;
     
+}
+
+ .more-information-web:hover .container-information-web{
+    visibility: visible;
+    transform: translateY(-240px);
+    opacity: 1;
+
 }
 
 .container-information-web h3{
