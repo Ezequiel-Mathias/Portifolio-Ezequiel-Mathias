@@ -117,20 +117,17 @@ ToLoadCardWeb(ProjectsWeb)
 
 
 
-/* const teste = document.querySelectorAll('.container-information-web')
-const btn = document.querySelector('.more-information-web')
 
-console.log(teste) */
-
-/* btn.addEventListener('click' , () => {
-    console.log('aaaaa')
-    teste.style.visibility = 'visible'
-})
- */
-/*  $('.more-information-web').on('click', function(){
-    teste = style.visibility = 'visible'
+  $('.more-information-web').on('click', function(evento){
     
- }); */
+    /* console.log(evento.currentTarget.children[1].style.visibility = 'visibility') */
+    const teste = evento.currentTarget.children[1]
+    
+    teste.style.visibility = 'visible'
+    
+    
+    
+ }); 
  
 
 

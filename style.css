@@ -183,25 +183,19 @@ footer .menu-contacts {
 .container-information-web{
     margin-top: 54px;
     width: clamp( 17rem , 50vw, 24rem);
-    height: clamp( 23rem , 59vw, 29rem);
+    height: clamp( 29rem , 59vw, 29rem);
     border-radius: 16px;
     background-color: #051923;
     position: absolute; 
     padding: 24px 24px 0px 24px;
     color: rgb(255, 255, 255);
     transform: translateY(-240px);
-    opacity: 0;
     transition: 0.1s;
     visibility: hidden;
     
 }
 
- .more-information-web:hover .container-information-web{
-    visibility: visible;
-    transform: translateY(-240px);
-    opacity: 1;
 
-}
 
 .container-information-web h3{
     font-size: clamp(1.2rem , 2.5vw , 1.3rem);
