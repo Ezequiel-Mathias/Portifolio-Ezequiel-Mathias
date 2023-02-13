@@ -1,3 +1,14 @@
+
+:root {
+    --gray: #D9D9D9;
+    --white: #ffffff;
+    --dark-blue: #051923;
+    --pink: #C22CB3;
+    --yellow: #B6A50E;
+    --blue: #0E76A8;
+    --navy-blue: #006494;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,13 +17,11 @@
 }
 
 header{
-   
-    background-color: #051923;
+    background-color: var(--dark-blue);
     height: 72px;
     min-width: 100%;
     padding-left: clamp(1rem , 5vw , 4.6rem);
-    padding-right: clamp(1rem , 5vw , 4.6rem); 
-    
+    padding-right: clamp(1rem , 5vw , 4.6rem);   
 }
 
 header nav{
@@ -31,8 +40,7 @@ header nav h1{
     width: max-content;
     height: 72px;
     display: flex;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .menu-contacts {
@@ -58,15 +66,15 @@ header nav h1{
 }
 
 .contatc-instagram{
-    background-color: #C22CB3;
+    background-color: var(--pink);
 }
 
 .contatc-email{
-    background-color: #B6A50E;
+    background-color: var(--yellow);
 }
 
 .contatc-linkdin{
-    background-color: #0E76A8;
+    background-color: var(--navy-blue);
 }
 
 .container-projects-web , 
@@ -80,20 +88,18 @@ header nav h1{
 .container-projects-backend h1{
     text-align: center;
     margin-bottom: 48px;
-    font-size: clamp(1.3rem , 3vw , 1.9rem);
-    
+    font-size: clamp(1.3rem , 3vw , 1.9rem); 
 }
 
 .container-card{
     width: clamp( 17rem , 50vw, 24rem);
     height: clamp( 26rem , 65vw, 32.4rem);
-    background-color: #D9D9D9;
+    background-color: var(--gray);
     border-radius: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-width: 17rem;
-    
 }
 
 .card-project h2{
@@ -103,10 +109,8 @@ header nav h1{
     margin-bottom: 90px;
 }
 
-.more-information-backend 
-, .more-information-mobile 
-, .more-information-web {
-    background-color: #051923;
+ .more-information {
+    background-color: var(--dark-blue);
     border-radius: 16px;
     height: 41px;
     display: flex;
@@ -116,10 +120,7 @@ header nav h1{
     font-weight: bold;    
 }
 
-
-.more-information-backend:hover > p,
- .more-information-mobile:hover > p,
- .more-information-web:hover > p  {
+ .more-information:hover > p  {
     text-decoration: underline;
     transform: scale(1.1);
 }
@@ -133,13 +134,11 @@ header nav h1{
     justify-content: space-between; 
     margin-left: clamp(1rem , 5vw , 4.6rem);
     margin-right: clamp(1rem , 5vw , 4.6rem); 
-    min-width: 20rem;
-    
+    min-width: 20rem; 
 }
 
-
 footer{
-    background-color: #051923;
+    background-color: var(--dark-blue);
     height: 266px;
     margin-top: 72px;
     display: flex;
@@ -149,66 +148,51 @@ footer{
 footer .menu-contacts {
     width: max-content;
     margin-left: -10px;
-    margin-top: 8px;
+    margin-top: 16px;
     display: flex;
     gap: clamp(0rem , 0.6vw , 0.5rem);
     margin-right: 10px;
+    margin-bottom: 16px;
 }
 
-
-
 .about , .contacts{
-    width: clamp( 10rem , 30vw , 20rem);
+    width: clamp( 17rem , 30vw , 20rem);
     word-wrap: break-word;
-    margin-left: 8px;
-    
-    
+    margin-left: 8px;   
 }
 
 .about h1 , .contacts h1 {
     margin-top: 24px;
     font-weight: bold;
-    color: white;
+    color: var(--white);
     margin-bottom: 8px;
-    font-size: clamp(1.1rem , 3vw , 1.5rem);
+    font-size: clamp(1.2rem , 3vw , 1.5rem);
 }
 
 .about p , .contacts p{
     margin-left: 3px;
-    color: white;
+    color: var(--white);
     font-weight: bold;
     font-size: clamp(0.9rem , 2vw , 1rem);
 }
 
-.container-information-web{
+.container-information{
     margin-top: 54px;
     width: clamp( 17rem , 50vw, 24rem);
-    height: clamp( 23rem , 59vw, 29rem);
+    height: clamp( 22rem , 59vw, 29rem);
     border-radius: 16px;
-    background-color: #051923;
+    background-color: var(--dark-blue);
     position: absolute; 
     padding: 24px 24px 0px 24px;
-    color: rgb(255, 255, 255);
-    transform: translateY(-240px);
-    opacity: 0;
-    transition: 0.1s;
-    visibility: hidden;
-    
+    color: var(--white);
+    visibility: hidden;   
 }
 
- .more-information-web:hover .container-information-web{
-    visibility: visible;
-    transform: translateY(-240px);
-    opacity: 1;
-
-}
-
-.container-information-web h3{
-    font-size: clamp(1.2rem , 2.5vw , 1.3rem);
-    
+.information h3{
+    font-size: clamp(1.1rem , 2.5vw , 1.3rem);
 }    
 
-.container-information-web p{
+.information p{
     font-weight: bolder;
     margin-top: 16px;
     margin-bottom: 16px;
@@ -218,25 +202,26 @@ footer .menu-contacts {
 .container-buttons{
     display: flex;
     gap: 40px;
-    margin-top: 72px;
+    font-weight: bolder;
+    font-size: clamp(0.9rem , 2vw , 1rem);
 }
 
 .button-page-or-page-github{
     width: 151px;
     height: 41px;
-    background-color: #006494;
+    background-color: var(--blue);
     border-radius: 16px;
-    color: white;
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 24px;
 }
 
-.container-information-web {
+.container-information {
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-around;  
 }
 
 .container-close-information img{
@@ -247,10 +232,8 @@ footer .menu-contacts {
 .container-close-information{
     display: flex;
     justify-content: end;
+    
 }
-
-
-
 
 @media (max-width: 1025px) {
     .container-cards-web , .container-cards-mobile , 
@@ -261,6 +244,14 @@ footer .menu-contacts {
 
 }
 
+@media (max-width: 420px) {
+    footer{
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;      
+    }
+}
 
 
  
