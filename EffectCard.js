@@ -1,4 +1,4 @@
-$('.more-information-web').on('click', function(evento){
+$('.more-information').on('click', function(evento){
  
     const containerInformationWeb = evento.currentTarget.parentElement.children[2]
     

@@ -59,14 +59,14 @@ const TrainingCardWeb = (cardweb) => {
         <h2>${cardweb.nome}</h2>
     </div>
 
-    <div class="more-information-web">
+    <div class="more-information">
         <p>Mais informações</p>
     </div>
 
 
-    <div class="container-information-web"> 
+    <div class="container-information"> 
 
-        <div class="information-web"> 
+        <div class="information"> 
 
             <div class="container-close-information">
                 <img src="./Icons/close.svg" alt="">
