@@ -55,46 +55,44 @@ const TrainingCardWeb = (cardweb) => {
     card.classList.add('container-card')
 
     card.innerHTML = `
-    
-
     <div class="card-project">
         <h2>${cardweb.nome}</h2>
-        
     </div>
 
     <div class="more-information-web">
-        
         <p>Mais informações</p>
+    </div>
 
-        <div class="container-information-web"> 
 
-        <div class="container-close-information">
-            <img src="./Icons/close.svg" alt="">
-        </div>
-        
+    <div class="container-information-web"> 
+
         <div class="information-web"> 
-        <h3>Tecnologias:</h3>
-        <p>${cardweb.tecnologias}</p>
+
+            <div class="container-close-information">
+                <img src="./Icons/close.svg" alt="">
+            </div>
+            
+            <h3>Tecnologias:</h3>
+            <p>${cardweb.tecnologias}</p>
 
 
-        <h3>Função exercida:</h3>
-        <p>FrontEnd</p>
+            <h3>Função exercida:</h3>
+            <p>FrontEnd</p>
 
-        <h3>Breve descrição sobre o projeto:</h3>
-        <p>Projeto muito legal feito por mim kkkkkksdlskdkskds ne não ? dlfçlsdklkdfaçlkdçlfk</p>
+            <h3>Breve descrição sobre o projeto:</h3>
+            <p>Projeto muito legal feito por mim kkkkkksdlskdkskds ne não ? dlfçlsdklkdfaçlkdçlfk</p>
+
         </div>
-        
-
+    
         <div class="container-buttons"> 
-        <div class="button-page-or-page-github">Página</div>
-        <div class="button-page-or-page-github">Github</div>
+
+            <div class="button-page-or-page-github">Página</div>
+            <div class="button-page-or-page-github">Github</div>
+            
         </div>
-        
-    </div>    
     
     </div>
-    
-   
+
 
     `
 
@@ -102,9 +100,8 @@ const TrainingCardWeb = (cardweb) => {
 }
 
 
-
-
 const ToLoadCardWeb = (projects) => {
+
     const container = document.querySelector('.container-cards-web')
 
     const cards = projects.map(TrainingCardWeb)
@@ -115,19 +112,12 @@ const ToLoadCardWeb = (projects) => {
 
 ToLoadCardWeb(ProjectsWeb)
 
+    
+
+  
 
 
 
-  $('.more-information-web').on('click', function(evento){
-    
-    /* console.log(evento.currentTarget.children[1].style.visibility = 'visibility') */
-    const teste = evento.currentTarget.children[1]
-    
-    teste.style.visibility = 'visible'
-    
-    
-    
- }); 
  
 
 
