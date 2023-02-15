@@ -48,8 +48,6 @@ const ProjectsMobile = [
 
 ]
 
-
-
 const TrainingCardMobile = (cardmobile) => {
 
     const card = document.createElement('div')
@@ -96,10 +94,7 @@ const TrainingCardMobile = (cardmobile) => {
     
     </div>
     
-        
-
     `
-
     return card
 }
 
@@ -112,7 +107,6 @@ const ToLoadCardMobile = (projects) => {
     container.replaceChildren(...cards)
 
 }
-
 
 
 ToLoadCardMobile(ProjectsMobile)

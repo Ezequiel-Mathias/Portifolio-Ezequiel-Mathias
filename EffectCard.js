@@ -6,7 +6,6 @@ $('.more-information').on('click', function(evento){
    
  }); 
 
-
   $('.container-close-information').on('click', function(evento){
     
    const containerInformationWeb = evento.currentTarget.parentElement.parentElement
