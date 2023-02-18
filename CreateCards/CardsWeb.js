@@ -2,53 +2,32 @@
 'use strict'
 
 const ProjectsWeb = [
+
     {
         id: '1',
-        nome: 'Site Clttone Pixabey',
-        video: 'teste',
-        tecnologias: 'teste, teste',
+        nome: 'Projeto de TCC Senai',
+        video: '<iframe width="100%" height="80%" src="https://www.youtube.com/embed/8-vUr_oP6o0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        tecnologias: 'React, SASS e Typescript ',
         funcaoExercida: 'FrontEnd',
-        descricao: 'lsda,k~çsdakkkkkkkkkkkkk',
-        pagina: '',
-        github: '',
+        descricao: 'Projeto de conclusão de curso do senai, uma rede social para devs, minha função nesse projeto foi desde a prototipação de telas ao consumo de APIS, projeto de código privado.',
+        pagina: 'https://ezequiel-mathias.github.io/Consumo-API-Pixabay/',
+        github: 'https://github.com/Ezequiel-Mathias/Consumo-API-Pixabay',
     },
-
     {
         id: '2',
-        nome: 'Site Cltone Pixabey',
-        video: 'teste',
-        tecnologias: 'teste333, teste333',
+        nome: 'Site Clone Pixabey',
+        video: '<iframe width="100%" height="80%" src="https://www.youtube.com/embed/n1Czn608AQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        tecnologias: 'HTML, CSS e Javascript',
         funcaoExercida: 'FrontEnd',
-        descricao: 'lsda,k~çsdakkkkkkkkkkkkk',
-        pagina: '',
-        github: '',
+        descricao: 'Site básico criado com a API da pixabey com o intuito de estudar sobre APIS.',
+        pagina: 'https://ezequiel-mathias.github.io/Consumo-API-Pixabay/',
+        github: 'https://github.com/Ezequiel-Mathias/Consumo-API-Pixabay',
     },
 
-    {
-        id: '2',
-        nome: 'Site Cltone Pixabey',
-        video: 'teste',
-        tecnologias: 'teste222, teste222',
-        funcaoExercida: 'FrontEnd',
-        descricao: 'lsda,k~çsdakkkkkkkkkkkkk',
-        pagina: '',
-        github: '',
-    },
-
-    {
-        id: '2',
-        nome: 'Site Cltone Pixabey',
-        video: 'teste',
-        tecnologias: 'teste111, teste111',
-        funcaoExercida: 'FrontEnd',
-        descricao: 'lsda,k~çsdakkkkkkkkkkkkk',
-        pagina: '',
-        github: '',
-    },
 
 ]
 
-const TrainingCardWeb = (cardweb) => {
+const TrainingCardWeb = ({nome , video , tecnologias , descricao, funcaoExercida, pagina, github}) => {
 
     const card = document.createElement('div')
 
@@ -56,13 +35,13 @@ const TrainingCardWeb = (cardweb) => {
 
     card.innerHTML = `
     <div class="card-project">
-        <h2>${cardweb.nome}</h2>
+        <h2>${nome}</h2>
+        ${video}
     </div>
 
     <div class="more-information">
-        <p>Mais informações</p>
+        <p>Mais informações</p>  
     </div>
-
 
     <div class="container-information"> 
 
@@ -73,21 +52,26 @@ const TrainingCardWeb = (cardweb) => {
             </div>
             
             <h3>Tecnologias:</h3>
-            <p>${cardweb.tecnologias}</p>
-
+            <p>${tecnologias}</p>
 
             <h3>Função exercida:</h3>
-            <p>FrontEnd</p>
+            <p>${funcaoExercida}</p>
 
             <h3>Breve descrição sobre o projeto:</h3>
-            <p>Projeto muito legal feito por mim kkkkkksdlskdkskds ne não ? dlfçlsdklkdfaçlkdçlfk</p>
+            <p>${descricao}</p>
 
         </div>
     
         <div class="container-buttons"> 
+            
+        
+            <a href="" target="_blank">
+                <div class="button-page-or-page-github">Página</div>
+            </a>
 
-            <div class="button-page-or-page-github">Página</div>
-            <div class="button-page-or-page-github">Github</div>
+            <a href="${github}" target="_blank">    
+                <div class="button-page-or-page-github">Github</div>
+            </a>    
             
         </div>
     
@@ -112,7 +96,8 @@ const ToLoadCardWeb = (projects) => {
 
 ToLoadCardWeb(ProjectsWeb)
 
-    
+ 
+
 
   
 

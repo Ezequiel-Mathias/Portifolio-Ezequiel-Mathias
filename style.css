@@ -34,11 +34,15 @@ header nav{
 }
 
 header nav h1{
-    color: white;
+    color: rgb(253, 253, 253);
     font-size: clamp(1.3rem , 3vw , 2rem);
     text-align: center;
-    text-decoration: none;
+    text-decoration: double;
     
+}
+
+.menu-name a{
+    text-decoration: none;
 }
 
 .menu-name{
@@ -46,8 +50,7 @@ header nav h1{
     height: 72px;
     display: flex;
     align-items: center;  
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .menu-contacts {
@@ -230,6 +233,7 @@ footer .menu-contacts {
     justify-content: center;
     margin-bottom: 24px;
     cursor: pointer;
+    
 }
 
 .container-information {
