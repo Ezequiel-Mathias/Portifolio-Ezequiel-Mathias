@@ -2,49 +2,7 @@
 
 
 const ProjectsMobile = [
-    {
-        id: '1',
-        nome: 'SProjetos Mobile',
-        video: 'teste',
-        tecnologias: 'teste, teste',
-        funcaoExercida: 'FrontEnd',
-        descricao: 'lsda,k~çsdakkkkkkkkkkkkk',
-        pagina: '',
-        github: '',
-    },
-
-    {
-        id: '2',
-        nome: 'Projetos Mobile',
-        video: 'teste',
-        tecnologias: 'teste, teste',
-        funcaoExercida: 'FrontEnd',
-        descricao: 'lsda,k~çsdakkkkkkkkkkkkk',
-        pagina: '',
-        github: '',
-    },
-
-    {
-        id: '2',
-        nome: 'Projetos Mobile',
-        video: 'teste',
-        tecnologias: 'teste, teste',
-        funcaoExercida: 'FrontEnd',
-        descricao: 'lsda,k~çsdakkkkkkkkkkkkk',
-        pagina: '',
-        github: '',
-    },
-
-    {
-        id: '2',
-        nome: 'Projetos Mobile',
-        video: 'teste',
-        tecnologias: 'teste, teste',
-        funcaoExercida: 'FrontEnd',
-        descricao: 'lsda,k~çsdakkkkkkkkkkkkk',
-        pagina: '',
-        github: '',
-    },
+    
 
 ]
 

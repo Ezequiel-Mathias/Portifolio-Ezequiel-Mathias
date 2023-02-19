@@ -2,49 +2,7 @@
 
 
 const ProjectsBackend = [
-    {
-        id: '1',
-        nome: 'SProjetos Backend',
-        video: 'teste',
-        tecnologias: 'teste, teste',
-        funcaoExercida: 'FrontEnd',
-        descricao: 'lsda,k~çsdakkkkkkkkkkkkk',
-        pagina: '',
-        github: '',
-    },
-
-    {
-        id: '2',
-        nome: 'Projetos Backend',
-        video: 'teste',
-        tecnologias: 'teste, teste',
-        funcaoExercida: 'FrontEnd',
-        descricao: 'lsda,k~çsdakkkkkkkkkkkkk',
-        pagina: '',
-        github: '',
-    },
-
-    {
-        id: '2',
-        nome: 'Projetos Backend',
-        video: 'teste',
-        tecnologias: 'teste, teste',
-        funcaoExercida: 'FrontEnd',
-        descricao: 'lsda,k~çsdakkkkkkkkkkkkk',
-        pagina: '',
-        github: '',
-    },
-
-    {
-        id: '2',
-        nome: 'Projetos Backend',
-        video: 'teste',
-        tecnologias: 'teste, teste',
-        funcaoExercida: 'FrontEnd',
-        descricao: 'lsda,k~çsdakkkkkkkkkkkkk',
-        pagina: '',
-        github: '',
-    },
+    
 
 ]
 

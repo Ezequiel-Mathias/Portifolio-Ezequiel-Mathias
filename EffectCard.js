@@ -1,26 +1,27 @@
-$('.more-information').on('click', function(evento){
- 
-    const containerInformationWeb = evento.currentTarget.parentElement.children[2]
-    
-    containerInformationWeb.style.visibility = "visible"
+$('.more-information').on('click', function (evento) {
 
-   
-   
- }); 
+  const containerInformationWeb = evento.currentTarget.parentElement.children[2]
 
-  $('.container-close-information').on('click', function(evento){
-    
-   const containerInformationWeb = evento.currentTarget.parentElement.parentElement
-    
-   containerInformationWeb.style.visibility = "hidden"
-    
- });
+  containerInformationWeb.style.visibility = "visible"
 
- /* containerInformationWeb.children[1].children[0] */
+  const ButtonPaginaHref = containerInformationWeb.children[1].children[0].attributes.href.nodeValue
+  const ButtonGithubHref = containerInformationWeb.children[1].children[1].attributes.href.nodeValue
 
- //pegando o que tem no href do botão 
- $('.button-page-or-page-github').on('click', function(evento){
-    
- console.log(evento.currentTarget.parentElement.attributes.href.nodeValue)
-   
+  if (!ButtonPaginaHref) {
+    containerInformationWeb.children[1].children[0].children[0].style.display = "none"
+    containerInformationWeb.children[1].style.gap = "0px"
+  }
+  if (!ButtonGithubHref) {
+    containerInformationWeb.children[1].children[1].children[0].style.display = "none"
+    containerInformationWeb.children[1].style.gap = "0px"
+  }
 });
+
+$('.container-close-information').on('click', function (evento) {
+
+  const containerInformationWeb = evento.currentTarget.parentElement.parentElement
+
+  containerInformationWeb.style.visibility = "hidden"
+
+});
+
