@@ -102,7 +102,7 @@ header nav h1{
 .container-projects-backend h1{
     text-align: center;
     margin-bottom: 48px;
-    font-size: clamp(1.3rem , 3vw , 1.9rem); 
+    font-size: clamp(1.4rem , 4vw , 1.9rem); 
 }
 
 .container-card{
@@ -154,10 +154,13 @@ header nav h1{
 
 footer{
     background-color: var(--dark-blue);
-    height: 266px;
+    height: 310px;
     margin-top: 72px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-left: clamp(1rem , 5vw , 4.6rem);
+    padding-right: clamp(1rem , 5vw , 4.6rem);  
+    
 }
 
 footer .menu-contacts {
@@ -171,13 +174,13 @@ footer .menu-contacts {
 }
 
 
-.about , .contacts{
-    width: clamp( 17rem , 30vw , 20rem);
+.about , .contacts , .academic-education{
+    width: clamp( 17rem , 30vw , 21rem);
     word-wrap: break-word;
     margin-left: 8px;   
 }
 
-.about h1 , .contacts h1 {
+.about h1 , .contacts h1 , .academic-education h1{
     margin-top: 24px;
     font-weight: bold;
     color: var(--white);
@@ -185,8 +188,7 @@ footer .menu-contacts {
     font-size: clamp(1.2rem , 3vw , 1.5rem);
 }
 
-.about p , .contacts p{
-    margin-left: 3px;
+.about p , .contacts p , .academic-education p{
     color: var(--white);
     font-weight: bold;
     font-size: clamp(0.9rem , 2vw , 1rem);
@@ -266,7 +268,7 @@ footer .menu-contacts {
 
 }
 
-@media (max-width: 420px) {
+@media (max-width: 801px) {
     footer{
         flex-direction: column;
         height: 100%;
