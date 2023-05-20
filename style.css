@@ -7,14 +7,6 @@
     --yellow: #B6A50E;
     --blue: #0E76A8;
     --navy-blue: #006494;
-
-
-    /* Portifolio 2.0 */
-
-    --green-water: #72BEC0;
-    --matte-blue: #202733;
-    --dark-grey: #2B3443;
-    --grey: #434A55;
 }
 
 *{
@@ -24,12 +16,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-color: var(--matte-blue);
-}
-
 header{
-    background-color: var(--matte-blue);
+    background-color: var(--dark-blue);
     height: 72px;
     min-width: 100%;
     padding-left: clamp(1rem , 5vw , 4.6rem);
@@ -46,8 +34,8 @@ header nav{
 }
 
 header nav h1{
-    color: var(--white);
-    font-size: 1.5rem;
+    color: rgb(253, 253, 253);
+    font-size: clamp(1.3rem , 3vw , 2rem);
     text-align: center;
     text-decoration: double;
     
@@ -55,18 +43,10 @@ header nav h1{
 
 .menu-name a{
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-}
-
-.menu-name a img{
-    
 }
 
 .menu-name{
-    
+    width: clamp( 7rem , 27vw, 17rem);
     height: 72px;
     display: flex;
     align-items: center;  
