@@ -61,10 +61,6 @@ header nav h1{
     gap: 2px;
 }
 
-.menu-name a img{
-    
-}
-
 .menu-name{
     
     height: 72px;
@@ -73,40 +69,25 @@ header nav h1{
     text-align: center;    
 }
 
-.menu-contacts {
+.menu-contacts nav {
+    
+    background-color: #C22CB3;
     display: flex;
-    justify-content: space-between;
-    width: max-content;
-}
-
-.menu-contacts img {
-    width: clamp(1.6rem , 3vw , 2rem);
-}
-
-.contatc-instagram,  
-.contatc-email,  
-.contatc-linkdin{
-    width: clamp( 2.5rem , 4vw , 3rem);
-    height: clamp( 2.5rem , 4vw , 3rem);
-    border-radius: 50%;
-    margin-left: 16px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    cursor: pointer;
+    
 }
 
-.contatc-instagram{
-    background-color: var(--pink);
+.menu-contacts nav ul {
+    width: 300px;
+    display: flex;
+    
+    justify-content: space-between;
 }
 
-.contatc-email{
-    background-color: var(--yellow);
-}
-
-.contatc-linkdin{
-    background-color: var(--navy-blue);
-}
+.menu-contacts nav ul li{
+    list-style: none;
+    color: var(--white);
+}    
 
 .container-projects-web{
     margin-top: 144px;
