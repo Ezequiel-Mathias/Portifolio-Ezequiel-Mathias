@@ -21,36 +21,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', monospace;
 }
 
 body{
     background-color: var(--matte-blue);
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 header{
     background-color: var(--matte-blue);
     height: 72px;
-    min-width: 100%;
-    padding-left: clamp(1rem , 5vw , 4.6rem);
-    padding-right: clamp(1rem , 5vw , 4.6rem);  
+    min-width: 100%;  
     position: fixed; 
     top: 0%;
     z-index: 10;
+    
 }
 
 header nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;  
 }
 
 header nav h1{
     color: var(--white);
     font-size: 1.5rem;
-    text-align: center;
-    text-decoration: double;
-    
+    text-align: center; 
 }
 
 .menu-name a{
@@ -61,8 +60,8 @@ header nav h1{
     gap: 2px;
 }
 
+
 .menu-name{
-    
     height: 72px;
     display: flex;
     align-items: center;  
@@ -70,26 +69,93 @@ header nav h1{
 }
 
 .menu-contacts nav {
-    
-    background-color: #C22CB3;
     display: flex;
     justify-content: center;
     
+    margin-right: 140px;
 }
 
 .menu-contacts nav ul {
-    width: 300px;
     display: flex;
-    
     justify-content: space-between;
+    gap: 62px;
+    
 }
 
 .menu-contacts nav ul li{
     list-style: none;
     color: var(--white);
-}    
+    font-size: 1.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+       
+}
 
-.container-projects-web{
+.menu-contacts nav ul li:hover{
+    cursor: pointer;
+    border-bottom: 3px solid var(--green-water);
+    transition: all 0.1s;
+    transform: scale(1.1);
+    margin-top: -3px;
+}
+
+.container-short-presentation{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.short-presentation{
+    width: 550px;
+    
+}
+
+.short-presentation span {
+    color: var(--green-water);
+    font-weight: bolder;
+}
+
+.short-presentation h1{
+    color: var(--white);
+    margin-top: 8px;
+    margin-bottom: 32px;    
+}
+
+.short-presentation p{
+    color: var(--white);  
+    
+}
+
+.button-download-curriculum{
+    width: 228px;
+    height: 50px;
+    margin-top: 32px;
+    border: 3px solid var(--green-water);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: var(--green-water);
+    font-weight: bold;
+}
+
+.button-download-curriculum:hover{
+    cursor: pointer;
+}
+
+.developer-activity{
+    margin-left: 200px;
+    width: 422px;
+    
+}
+
+.developer-activity img{    
+    width: 450px;
+}
+
+/* .container-projects-web{
     margin-top: 144px;
 }
 
@@ -277,7 +343,7 @@ footer .menu-contacts {
         align-items: center;      
     }
 }
-
+ */
 
  
 
