@@ -26,8 +26,7 @@
 
 body{
     background-color: var(--matte-blue);
-    padding-left: 70px;
-    padding-right: 70px;
+    
 }
 
 header{
@@ -58,6 +57,7 @@ header nav h1{
     align-items: center;
     justify-content: center;
     gap: 2px;
+    margin-left: 70px;
 }
 
 
@@ -72,7 +72,7 @@ header nav h1{
     display: flex;
     justify-content: center;
     
-    margin-right: 140px;
+    margin-right: 70px;
 }
 
 .menu-contacts nav ul {
@@ -104,7 +104,8 @@ header nav h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    margin-right: 70px;
+    margin-left: 70px;
 }
 
 .short-presentation{
@@ -153,6 +154,47 @@ header nav h1{
 
 .developer-activity img{    
     width: 450px;
+}
+
+.container-about{
+    
+}
+
+.container-vector-top{
+    background-image: url("./Icons/Vector-top.png");
+    width: 100%;
+    height: 321px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+
+.container-vector-bottom{
+    background-image: url("./Icons/Vector-bottom.png");
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+
+.about-my{
+    height: 321px;
+    background-color: #6c7c7c;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-my h1{
+    font-size: 32px;
+    color: var(--white);
+    font-weight: bolder;
+}    
+
+.base2{
+    height: 315px;
+    background-color: #C22CB3;
+    margin-top: 200px;
 }
 
 /* .container-projects-web{
