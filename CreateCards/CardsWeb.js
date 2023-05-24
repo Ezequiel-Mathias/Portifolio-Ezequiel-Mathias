@@ -6,10 +6,10 @@ const ProjectsWeb = [
     {
         id: '1',
         nome: 'Projeto de TCC Senai',
-        video: '<iframe width="100%" height="80%" src="https://www.youtube.com/embed/8-vUr_oP6o0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        video: '',
         tecnologias: 'React, SASS e Typescript ',
         funcaoExercida: 'FrontEnd',
-        descricao: 'Projeto de conclusão de curso do senai, uma rede social para devs, minha função nesse projeto foi desde a prototipação de telas ao consumo de APIS, projeto de código privado.',
+        descricao: '',
         pagina: '',
         github: '',
     },
@@ -47,7 +47,7 @@ const TrainingCardWeb = ({ nome, video, tecnologias, descricao, funcaoExercida, 
 
     card.innerHTML = `
     <div class="card-project">
-        <h2>${nome}</h2>
+        
         ${video}
     </div>
 
