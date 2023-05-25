@@ -7,7 +7,7 @@
     --yellow: #B6A50E;
     --blue: #0E76A8;
     --navy-blue: #006494;
-
+    
 
     /* Portifolio 2.0 */
 
@@ -311,87 +311,113 @@ header nav h1{
     font-weight: bold;
 }
 
-.container-projects{
-    margin-top: 168px;
-}
-
-.container-projects {
-
-}
-
- .container-projects-web{
-    margin-top: 144px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container-projects-mobile , 
-.container-projects-backend{
-    margin-top: 72px;
-}
-
-.container-projects-web h1 , 
-.container-projects-mobile h1, 
-.container-projects-backend h1{
-    text-align: center;
-    margin-bottom: 48px;
-    font-size: clamp(1.4rem , 4vw , 1.9rem); 
-}
-
 .container-card{
     width: 353px;
     height: 450px;
     background-color: var(--dark-grey);
-    border-radius: 4px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     min-width: 17rem;
+    padding: 16px;
 }
 
-.card-project h2{
+
+.container-projects{
+    margin-top: 168px;
+}
+
+
+.container-about-project{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+
+}
+
+.about-project{
+    margin-top: 24px;
+}
+
+.about-project h1{
     color: var(--white);
-    text-align: center;
-    font-size: clamp(1.2rem , 3vw , 1.5rem);
-    padding-top: 24px;
-    margin-bottom: clamp(3.5rem , 10vw , 5.5rem);
+    margin-bottom: 24px;
+    
 }
 
- .more-information {
-    background-color: var(--dark-blue);
-    border-radius: 16px;
-    height: 41px;
+.about-project p{
+    color: var(--white);
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.container-more-information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-more-information .more-information {
+    height: 33px;
+    width: 133px;
+    background-color: var(--matte-blue);
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--green-water);
     font-weight: bold;   
     cursor: pointer; 
 }
 
- .more-information:hover > p  {
+.more-information:hover {
     text-decoration: underline;
     transform: scale(1.1);
 }
 
-.container-cards-web , 
-.container-cards-mobile , 
-.container-cards-backend{
+.container-information{
+    margin-top: -16px;
+    margin-left: -16px;
+    width: 353px;
+    height: 450px;
+    border-radius: 4px;
+    background-color: var(--dark-grey);
+    position: absolute; 
+    padding: 16px;
+    color: var(--white);
+    visibility: hidden;   
+}
+
+.information{
+    background-color: #C22CB3;
+    height: 100%;
+}
+
+.information h1{
+    text-align: center;
+}    
+
+.information p{
+    font-weight: bolder;
+    margin-top: 24px;
+    font-size: 17px;
+    text-align: center;
+}   
+
+
+/****************** REUTILIZAÇÃO ***********************/
+
+
+
+
+
+
+
+ 
+
+
+
+.container-cards-web {
     display: flex;
     flex-wrap: wrap;
     gap: 26px;
@@ -443,28 +469,7 @@ footer .menu-contacts {
     font-size: clamp(0.9rem , 2vw , 1rem);
 }
  */
-.container-information{
-    margin-top: 54px;
-    width: clamp( 17rem , 50vw, 24rem);
-    height: clamp( 22rem , 59vw, 29rem);
-    border-radius: 16px;
-    background-color: var(--dark-blue);
-    position: absolute; 
-    padding: 24px 24px 0px 24px;
-    color: var(--white);
-    visibility: hidden;   
-}
 
-.information h3{
-    font-size: clamp(1.1rem , 2.5vw , 1.3rem);
-}    
-
-.information p{
-    font-weight: bolder;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    font-size: clamp(0.9rem , 2.4vw , 1.2rem);
-}   
 
 .container-buttons{
     display: flex;

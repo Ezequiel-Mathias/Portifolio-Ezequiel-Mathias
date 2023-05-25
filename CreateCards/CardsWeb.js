@@ -6,7 +6,7 @@ const ProjectsWeb = [
     {
         id: '1',
         nome: 'Projeto de TCC Senai',
-        video: '',
+        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/n1Czn608AQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
         tecnologias: 'React, SASS e Typescript ',
         funcaoExercida: 'FrontEnd',
         descricao: '',
@@ -17,7 +17,7 @@ const ProjectsWeb = [
     {
         id: '2',
         nome: 'Site Clone Pixabey',
-        video: '<iframe width="100%" height="80%" src="https://www.youtube.com/embed/n1Czn608AQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/n1Czn608AQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
         tecnologias: 'HTML, CSS e Javascript',
         funcaoExercida: 'FrontEnd',
         descricao: 'Site básico criado com a API da pixabey com o intuito de estudar sobre APIS.',
@@ -28,7 +28,7 @@ const ProjectsWeb = [
     {
         id: '3',
         nome: 'Consumo API via cep',
-        video: '<iframe width="100%" height="80%" src="https://www.youtube.com/embed/9oc0hkJylss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/9oc0hkJylss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
         tecnologias: 'HTML, CSS e Javascript',
         funcaoExercida: 'FrontEnd',
         descricao: 'Simples consumo de API pública via cep',
@@ -47,12 +47,24 @@ const TrainingCardWeb = ({ nome, video, tecnologias, descricao, funcaoExercida, 
 
     card.innerHTML = `
     <div class="card-project">
-        
         ${video}
     </div>
 
-    <div class="more-information">
-        <p>Mais informações</p>  
+    <div class="container-about-project">
+
+        <div class="about-project">
+            <h1>Website Adopet</h1>
+
+            <p>Site para adoção de pets para adotar bichinhos, gatinhos, caes e etc.</p>
+        </div>
+
+        <div class="container-more-information">
+            <div class="more-information">
+            <p>Detalhes</p>  
+            </div>
+            
+        </div>
+
     </div>
 
     <div class="container-information"> 
@@ -63,8 +75,9 @@ const TrainingCardWeb = ({ nome, video, tecnologias, descricao, funcaoExercida, 
                 <img src="./Icons/close.svg" alt="">
             </div>
             
-            <h3>Tecnologias:</h3>
-            <p>${tecnologias}</p>
+            <h1>${nome}</h1>
+
+            <p>${descricao}</p>
 
             <h3>Função exercida:</h3>
             <p>${funcaoExercida}</p>
