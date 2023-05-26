@@ -510,8 +510,36 @@ header nav h1{
     justify-content: space-around;  
 }
 
+.container-contacts{
+    margin-top: 168px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 70px;
+    
+}
 
+.container-contacts p{
+    color: var(--white);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;   
+    margin-bottom: 144px; 
+}
+.container-means-of-contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 216px;
+}
 
+.my-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
  
 
