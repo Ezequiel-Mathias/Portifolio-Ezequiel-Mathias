@@ -9,7 +9,7 @@ const ProjectsWeb = [
         video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/n1Czn608AQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
         tecnologias: 'React, SASS e Typescript ',
         funcaoExercida: 'FrontEnd',
-        descricao: '',
+        descricao: 'Site básico criado com a API da pixabey com o intuito de estudar sobre APIS.',
         pagina: '',
         github: '',
     },
@@ -55,7 +55,13 @@ const TrainingCardWeb = ({ nome, video, tecnologias, descricao, funcaoExercida, 
         <div class="about-project">
             <h1>Website Adopet</h1>
 
-            <p>Site para adoção de pets para adotar bichinhos, gatinhos, caes e etc.</p>
+            <div class="description">
+                <p> ${descricao} skdajd kdsjlksdja ksalkdsçla lçkasçlksdaç klasdçlska
+                dsjka~çldjs kljadsçlds jksd jksadlk jksa slkja saojdkajsd kj jashkdsh kasdlçkjkdsal jhnaslkdjsa ksadçlsdkç
+                sadkdlsçaka dlkjasçlksdja ajdslkasj ksjadlkdjsa kjlasdkldjs jklalkjsda kljasdlkjdsald lksdjalkasdj
+                </p>
+            </div>
+            
         </div>
 
         <div class="container-more-information">
@@ -77,25 +83,52 @@ const TrainingCardWeb = ({ nome, video, tecnologias, descricao, funcaoExercida, 
             
             <h1>${nome}</h1>
 
-            <p>${descricao}</p>
+            <div class="description">
+             <p>${descricao} skdajd dsjka~çldjs kljadsçlds jksd jksadlk jksa slkja saojdkajsd kj jashkdsh kasdlçkjkdsal jhnaslkdjsa </p>
+            </div>
 
-            <h3>Função exercida:</h3>
-            <p>${funcaoExercida}</p>
+            
 
-            <h3>Breve descrição sobre o projeto:</h3>
-            <p>${descricao}</p>
+            <div class="container-technologies">
+                <div class="technologies">
+                    <span>React.js</span>
+                </div>
+                <div class="technologies">
+                    <span>SASS</span>
+                </div>
+                <div class="technologies">
+                    <span>Node.js</span>
+                </div>
+                <div class="technologies">
+                    <span>Docker</span>
+                </div>
+
+                <div class="technologies">
+                    <span>Javascript</span>
+                </div>
+                <div class="technologies">
+                    <span>Next.js</span>
+                </div>
+                <div class="technologies">
+                    <span>React.js</span>
+                </div>
+                <div class="technologies">
+                    <span>React.js</span>
+                </div>
+            </div>
+
+            
 
         </div>
     
         <div class="container-buttons"> 
             
-        
             <a href="${pagina}" target="_blank">
-                <div class="button-page-or-page-github">Página</div>
+                <div class="button-to-access-pages">Página</div>
             </a>
 
             <a href="${github}" target="_blank">    
-                <div class="button-page-or-page-github">Github</div>
+                <div class="button-to-access-pages">Github</div>
             </a>    
             
         </div>
@@ -111,7 +144,7 @@ const TrainingCardWeb = ({ nome, video, tecnologias, descricao, funcaoExercida, 
 
 const ToLoadCardWeb = (projects) => {
 
-    const container = document.querySelector('.container-cards-web')
+    const container = document.querySelector('.container-cards-projects')
 
     const cards = projects.map(TrainingCardWeb)
 
