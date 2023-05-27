@@ -5,6 +5,7 @@
     --matte-blue: #202733;
     --dark-grey: #2B3443;
     --grey: #434A55;
+    --dark-blue: #1A222D;
 }
 
 *{
@@ -12,6 +13,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', monospace;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -49,7 +54,7 @@ header nav{
 
 header nav h1{
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: clamp( 1.3rem , 1.7vw, 1.5rem);
     text-align: center; 
 }
 
@@ -80,17 +85,21 @@ header nav h1{
 .menu-contacts nav ul {
     display: flex;
     justify-content: space-between;
-    gap: 62px;
+    gap: clamp( 0rem , 8vw ,  7rem);
     
 }
 
 .menu-contacts nav ul li{
     list-style: none;
     color: var(--white);
-    font-size: 1.5rem;
-    padding-left: 10px;
-    padding-right: 10px;
-       
+    font-size: clamp( 1.3rem , 1.7vw, 1.5rem);
+   
+}
+
+.menu-contacts nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.25s ease-in-out;
 }
 
 .menu-contacts nav ul li:hover{
@@ -108,6 +117,8 @@ header nav h1{
     justify-content: space-between;
     margin-right: 70px;
     margin-left: 70px;
+    
+    background: radial-gradient( #303E52 10% , var(--matte-blue) 70% , var(--matte-blue)  );
 }
 
 .short-presentation{
@@ -118,6 +129,7 @@ header nav h1{
 .short-presentation span {
     color: var(--green-water);
     font-weight: bolder;
+    
 }
 
 .short-presentation h1{
@@ -128,7 +140,7 @@ header nav h1{
 
 .short-presentation p{
     color: var(--white);  
-    
+    font-size: 20px;
 }
 
 .button-download-curriculum{
@@ -149,17 +161,15 @@ header nav h1{
 }
 
 .developer-activity{
-    margin-left: 200px;
-    width: 422px;
-     
+    width: 722px;
+    display: flex;
+    justify-content: right;
 }
 
 .developer-activity img{    
-    width: 450px;
+    width: 550px;
+    margin-right: -30px;
 }
-
-
-
 .container-vector-top{
     background-image: url("./Icons/Vector-top.png");
     width: 100%;
@@ -190,7 +200,6 @@ header nav h1{
 
 .about{
     width: 100%;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -267,7 +276,7 @@ header nav h1{
 }
 
 .profile-contacts h1 {
-    font-weight: lighter;
+    font-weight: bolder;
     margin-top: 8px;
 }
 
@@ -288,6 +297,8 @@ header nav h1{
     margin-left: 70px;
     margin-right: 70px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 56px;
     flex-wrap: wrap;
 }
@@ -510,8 +521,9 @@ header nav h1{
     justify-content: space-around;  
 }
 
-.container-contacts{
+.contact-section{
     margin-top: 168px;  
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -521,13 +533,15 @@ header nav h1{
     
 }
 
-.container-contacts p{
+.contact-section p{
     color: var(--white);
+    width: 1301px;
     text-align: center;
     font-weight: bolder;
     font-size: 20px;   
     margin-bottom: 144px; 
 }
+
 .container-means-of-contact{
     width: 100%;
     display: flex;
@@ -535,15 +549,62 @@ header nav h1{
     height: 216px;
 }
 
-.my-contact{
+.container-my-contact-one {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container-my-contact-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.container-my-contact-one .container-contact{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 16px;
+    width: max-content;
+}
+
+.container-my-contact-two .container-contact{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 16px;
+    width: max-content;
+}
+
+.container-means-of-contact .container-contact:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+
+.container-means-of-contact span{
+    color: var(--white);
+    font-size: 20px;
+
+}
+
+footer{
+    margin-top: 168px;
+    height: 90px;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 5px var(--green-water);
+}
+
+footer span {
+    color: var(--grey);
+    font-size: 20px;
+    font-weight: bolder;
 }
 
  
-
- 
-
-
-
