@@ -78,13 +78,11 @@ header nav h1{
 .menu-contacts nav {
     display: flex;
     justify-content: center;
-    
     margin-right: 70px;
 }
 
 .menu-contacts nav ul {
     display: flex;
-    justify-content: space-between;
     gap: clamp( 0rem , 8vw ,  7rem);
     
 }
@@ -110,6 +108,20 @@ header nav h1{
     margin-top: -3px;
 }
 
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 8px;
+    transition: 0.3s;
+}
+
+
 .container-short-presentation{
     height: 80vh;
     display: flex;
@@ -117,34 +129,36 @@ header nav h1{
     justify-content: space-between;
     margin-right: 70px;
     margin-left: 70px;
-    
-    background: radial-gradient( #303E52 10% , var(--matte-blue) 70% , var(--matte-blue)  );
+    background: radial-gradient( #303E52 10% , var(--matte-blue) 70% , var(--matte-blue)  ); 
 }
 
 .short-presentation{
     width: 550px;
-    
+  
 }
 
 .short-presentation span {
     color: var(--green-water);
     font-weight: bolder;
+    font-size: 1rem;
     
 }
 
 .short-presentation h1{
     color: var(--white);
     margin-top: 8px;
-    margin-bottom: 32px;    
+    margin-bottom: 32px; 
+    font-size: clamp( 1.8rem, 3vw , 2rem);   
 }
 
 .short-presentation p{
     color: var(--white);  
-    font-size: 20px;
+    font-size: clamp( 1.2rem ,  2vw , 1.3rem);
+    
 }
 
 .button-download-curriculum{
-    width: 228px;
+    width: clamp( 13rem , 16vw , 14.4rem);
     height: 50px;
     margin-top: 32px;
     border: 3px solid var(--green-water);
@@ -167,7 +181,7 @@ header nav h1{
 }
 
 .developer-activity img{    
-    width: 550px;
+    width: clamp( 29rem  , 35vw, 34rem);
     margin-right: -30px;
 }
 .container-vector-top{
@@ -187,13 +201,11 @@ header nav h1{
 }
 
 .about-my{
-    height: 321px;
     background-color: var(--dark-grey);
     margin-top: -2px;
     margin-bottom: -2px;
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
+    align-items: center;
     color: var(--white);
     text-align: center;
 }
@@ -208,13 +220,16 @@ header nav h1{
 
 
 .about p{
-    width: 687px;
-    font-size: 20px;
-    font-weight: lighter;   
+    width: clamp( 25rem , 75vw ,43rem);
+    font-size: clamp( 1.1rem ,  2vw , 1.3rem);
+
 }
+
+
 
 .about h2{
     margin-bottom: 40px;
+    font-size: clamp( 1.4rem , 2.4vw , 1.5rem);
 }
 
 .title-section{
@@ -226,15 +241,15 @@ header nav h1{
 }
 
 .title-section h1{
-    font-size: 32px;
+    font-size: clamp( 1.7rem , 3vw , 2rem);
     font-weight: bolder;  
     color: var(--white); 
     
 }
 
 .title-tag{
-    width: 21px;
-    height: 21px;
+    width: clamp( 1.20rem , 2vw , 1.32rem);
+    height: clamp( 1.20rem , 2vw , 1.32rem);
     border: solid 2px var(--green-water);
     display: flex;
     align-items: center;
@@ -242,15 +257,15 @@ header nav h1{
 }
 
 .title-tag .circle{
-    width: 13px;
-    height: 13px;
+    width: clamp( 0.70rem , 1.30vw , 0.82rem);
+    height: clamp( 0.70rem , 1.30vw , 0.82rem);
     background-color: var(--green-water);
     border-radius: 100%;
 }
 
 .profile-contacts{
     height: 321px;
-    width: 400px;
+    width: clamp( 10rem , 19vw , 25rem);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -278,6 +293,7 @@ header nav h1{
 .profile-contacts h1 {
     font-weight: bolder;
     margin-top: 8px;
+    font-size: clamp( 1.4rem , 2vw , 1.5rem);
 }
 
 .profile-contacts .contacts{
@@ -285,8 +301,9 @@ header nav h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: clamp( 0.9rem , 1.5vw ,2rem);
 }
+
 
 .profile-contacts .contacts img:hover{
     cursor: pointer;
@@ -315,7 +332,7 @@ header nav h1{
 }
 
 .skill img {
-    width: 60px;
+    width: clamp( 2.9rem , 5.4vw , 3.75rem);
     height: 60px;
 }
 
@@ -325,8 +342,8 @@ header nav h1{
 }
 
 .container-card{
-    width: 353px;
-    height: 450px;
+    width: clamp( 21.07rem , 39vw , 22.07rem);
+    height: clamp( 27.13rem , 45vw , 28.13rem);
     background-color: var(--dark-grey);
     border-radius: 8px;
     display: flex;
@@ -344,7 +361,7 @@ header nav h1{
 .container-about-project{
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: clamp( 1rem , 1.9vw , 2rem);
 
 }
 
@@ -361,6 +378,7 @@ header nav h1{
 
 .about-project .description{
     height: 120px;
+    
 }
 
 .container-more-information{
@@ -389,10 +407,10 @@ header nav h1{
 }
 
 .container-information{
-    margin-top: -16px;
+    margin-top: -15px;
     margin-left: -16px;
-    width: 353px;
-    height: 450px;
+    width: clamp( 21.07rem , 39vw , 22.07rem);
+    height: clamp( 27.13rem , 45vw , 28.13rem);
     border-radius: 4px;
     background-color: var(--dark-grey);
     position: absolute; 
@@ -447,7 +465,7 @@ header nav h1{
   }
 
 .container-technologies{
-    margin-top: 32px;
+    margin-top: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -466,7 +484,6 @@ header nav h1{
     font-size: 18px;
     font-weight: bold;
     color: var(--green-water);
-    
 }
 
 .container-buttons{
@@ -510,9 +527,11 @@ header nav h1{
     flex-wrap: wrap;
     gap: 26px;
     justify-content: space-between; 
+    
     margin-left: clamp(1rem , 5vw , 4.6rem);
     margin-right: clamp(1rem , 5vw , 4.6rem); 
     min-width: 20rem; 
+    
 }
 
 .container-information {
@@ -607,4 +626,102 @@ footer span {
     font-weight: bolder;
 }
 
- 
+
+
+
+@media (max-width: 1025px){
+
+
+    .about p{
+        font-weight: bold;
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        height: 90vh;
+        background-color: var(--matte-blue); 
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transform: translate(130%);
+        transition:  0.3s ease-in;
+        padding: 16px;
+        border-radius: 8px;
+        
+    }
+
+    .nav-list li {
+        margin: 0;
+        opacity: 0;
+        
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-list.active{
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px , 8px);
+    }
+
+    .mobile-menu.active .line2 {
+        opacity: 0;
+    }
+
+    .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-8px , -7px);
+    }
+
+
+    .developer-activity{
+        display: none;
+    }
+
+    .container-short-presentation{
+        justify-content: center;
+        
+    }
+
+    .profile-contacts{
+        position: relative;
+        width: 100%;
+    }
+
+    .about-my{
+        display: block;
+    }
+
+    .container-cards-projects{
+        justify-content: center;
+    }
+    
+
+}
+
+
+@media (max-width: 800px){
+    .container-short-presentation{
+        background: var(--matte-blue);
+    }
+}
+
+
+
+
+
+

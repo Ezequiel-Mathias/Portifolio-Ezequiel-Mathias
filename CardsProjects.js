@@ -36,6 +36,52 @@ const ProjectsWeb = [
         github: 'https://github.com/Ezequiel-Mathias/ConsumoAPI-Cep',
     },
 
+    {
+        id: '3',
+        nome: 'Consumo API via cep',
+        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/9oc0hkJylss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        tecnologias: 'HTML, CSS e Javascript',
+        funcaoExercida: 'FrontEnd',
+        descricao: 'Simples consumo de API pública via cep',
+        pagina: 'https://ezequiel-mathias.github.io/ConsumoAPI-Cep/',
+        github: 'https://github.com/Ezequiel-Mathias/ConsumoAPI-Cep',
+    },
+
+    {
+        id: '3',
+        nome: 'Consumo API via cep',
+        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/9oc0hkJylss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        tecnologias: 'HTML, CSS e Javascript',
+        funcaoExercida: 'FrontEnd',
+        descricao: 'Simples consumo de API pública via cep',
+        pagina: 'https://ezequiel-mathias.github.io/ConsumoAPI-Cep/',
+        github: 'https://github.com/Ezequiel-Mathias/ConsumoAPI-Cep',
+    },
+
+    
+    {
+        id: '3',
+        nome: 'Consumo API via cep',
+        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/9oc0hkJylss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        tecnologias: 'HTML, CSS e Javascript',
+        funcaoExercida: 'FrontEnd',
+        descricao: 'Simples consumo de API pública via cep',
+        pagina: 'https://ezequiel-mathias.github.io/ConsumoAPI-Cep/',
+        github: 'https://github.com/Ezequiel-Mathias/ConsumoAPI-Cep',
+    },
+
+    
+    {
+        id: '3',
+        nome: 'Consumo API via cep',
+        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/9oc0hkJylss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        tecnologias: 'HTML, CSS e Javascript',
+        funcaoExercida: 'FrontEnd',
+        descricao: 'Simples consumo de API pública via cep',
+        pagina: 'https://ezequiel-mathias.github.io/ConsumoAPI-Cep/',
+        github: 'https://github.com/Ezequiel-Mathias/ConsumoAPI-Cep',
+    },
+
 
 ]
 
