@@ -64,7 +64,7 @@ header nav h1{
     align-items: center;
     justify-content: center;
     gap: 2px;
-    margin-left: 70px;
+    
 }
 
 
@@ -73,12 +73,13 @@ header nav h1{
     display: flex;
     align-items: center;  
     text-align: center;    
+    margin-left: clamp( 1rem , 5vw ,4.375rem);
 }
 
 .menu-contacts nav {
     display: flex;
     justify-content: center;
-    margin-right: 70px;
+    margin-right: clamp( 1rem , 5vw ,4.375rem);
 }
 
 .menu-contacts nav ul {
@@ -127,8 +128,8 @@ header nav h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 70px;
-    margin-left: 70px;
+    margin-right: clamp( 1rem , 5vw ,4.375rem);
+    margin-left: clamp( 1rem , 5vw ,4.375rem);
     background: radial-gradient( #303E52 10% , var(--matte-blue) 70% , var(--matte-blue)  ); 
 }
 
@@ -153,12 +154,16 @@ header nav h1{
 
 .short-presentation p{
     color: var(--white);  
-    font-size: clamp( 1.2rem ,  2vw , 1.3rem);
+    font-size: clamp( 1rem ,  2vw , 1.3rem);;
     
 }
 
+.short-presentation a {
+    text-decoration: none;
+}
+
 .button-download-curriculum{
-    width: clamp( 13rem , 16vw , 14.4rem);
+    width: clamp( 12rem , 16vw , 14.4rem);
     height: 50px;
     margin-top: 32px;
     border: 3px solid var(--green-water);
@@ -220,8 +225,8 @@ header nav h1{
 
 
 .about p{
-    width: clamp( 25rem , 75vw ,43rem);
-    font-size: clamp( 1.1rem ,  2vw , 1.3rem);
+    width: clamp( 22rem , 75vw ,43rem);
+    font-size: clamp( 1rem ,  2vw , 1.3rem);
 
 }
 
@@ -229,7 +234,7 @@ header nav h1{
 
 .about h2{
     margin-bottom: 40px;
-    font-size: clamp( 1.4rem , 2.4vw , 1.5rem);
+    font-size: clamp( 1.3rem , 2.4vw , 1.5rem);
 }
 
 .title-section{
@@ -241,7 +246,7 @@ header nav h1{
 }
 
 .title-section h1{
-    font-size: clamp( 1.7rem , 3vw , 2rem);
+    font-size: clamp( 1.6rem , 3vw , 2rem);
     font-weight: bolder;  
     color: var(--white); 
     
@@ -301,8 +306,13 @@ header nav h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: clamp( 0.9rem , 1.5vw ,2rem);
+    gap: clamp( 1.3rem , 1.5vw ,2rem);
 }
+
+.profile-contacts .contacts img{
+    width: clamp( 1.7rem , 3vw , 2rem);
+}
+
 
 
 .profile-contacts .contacts img:hover{
@@ -311,8 +321,8 @@ header nav h1{
 }
 
 .all-skills{
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-right: clamp( 1rem , 5vw ,4.375rem);
+    margin-left: clamp( 1rem , 5vw ,4.375rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -342,7 +352,7 @@ header nav h1{
 }
 
 .container-card{
-    width: clamp( 21.07rem , 39vw , 22.07rem);
+    width: clamp( 20rem , 39vw , 22.07rem);
     height: clamp( 27.13rem , 45vw , 28.13rem);
     background-color: var(--dark-grey);
     border-radius: 8px;
@@ -373,13 +383,18 @@ header nav h1{
 .about-project h1{
     color: var(--white);
     margin-bottom: 24px;
-    
+    text-align: center;
+    font-size: clamp( 1.25rem , 2vw , 1.5rem);
 }
 
 .about-project .description{
-    height: 120px;
-    
+    height: 120px;  
 }
+
+.about-project .description p{
+    font-weight: bolder;
+    font-size: clamp( 1rem ,  2vw , 1.1rem);
+}   
 
 .container-more-information{
     
@@ -409,7 +424,7 @@ header nav h1{
 .container-information{
     margin-top: -15px;
     margin-left: -16px;
-    width: clamp( 21.07rem , 39vw , 22.07rem);
+    width: clamp( 20rem , 39vw , 22.07rem);
     height: clamp( 27.13rem , 45vw , 28.13rem);
     border-radius: 4px;
     background-color: var(--dark-grey);
@@ -525,12 +540,12 @@ header nav h1{
 .container-cards-projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 26px;
-    justify-content: space-between; 
-    
-    margin-left: clamp(1rem , 5vw , 4.6rem);
-    margin-right: clamp(1rem , 5vw , 4.6rem); 
+    gap: 40px;
+    justify-content: center; 
+    margin-right: clamp( 1rem , 5vw ,4.375rem);
+    margin-left: clamp( 1rem , 5vw ,4.375rem);
     min-width: 20rem; 
+    
     
 }
 
@@ -542,23 +557,23 @@ header nav h1{
 
 .contact-section{
     margin-top: 168px;  
-    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-right: clamp( 1rem , 5vw ,4.375rem);
+    margin-left: clamp( 1rem , 5vw ,4.375rem);
     
 }
 
 .contact-section p{
     color: var(--white);
-    width: 1301px;
+    width: clamp( 22rem , 82vw , 81.313rem);
     text-align: center;
     font-weight: bolder;
-    font-size: 20px;   
+     font-size: clamp( 1rem ,  2vw , 1.3rem);
     margin-bottom: 144px; 
+    
 }
 
 .container-means-of-contact{
@@ -569,6 +584,7 @@ header nav h1{
 }
 
 .container-my-contact-one {
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -576,6 +592,7 @@ header nav h1{
 }
 
 .container-my-contact-two{
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -586,7 +603,7 @@ header nav h1{
     display: flex;
     justify-content: left;
     align-items: center;
-    gap: 16px;
+    gap: clamp( 0.5rem , 1vw , 1rem);
     width: max-content;
 }
 
@@ -594,8 +611,14 @@ header nav h1{
     display: flex;
     justify-content: right;
     align-items: center;
-    gap: 16px;
+    gap: clamp( 0.5rem , 1vw , 1rem);
     width: max-content;
+}
+
+.container-my-contact-two  #text-linkdin{
+    width: max-content;
+    
+    
 }
 
 .container-means-of-contact .container-contact:hover {
@@ -606,13 +629,22 @@ header nav h1{
 
 .container-means-of-contact span{
     color: var(--white);
-    font-size: 20px;
+    font-size: clamp( 1rem , 1.5vw , 1.25rem);
+    font-weight: bold;
 
+}
+
+.container-means-of-contact img {
+    width: clamp( 1.7rem , 3vw , 2rem);
+}
+
+.container-means-of-contact a {
+    text-decoration: none;
 }
 
 footer{
     margin-top: 168px;
-    height: 90px;
+    height: clamp(4rem , 10vw , 5.625rem);
     background-color: var(--dark-blue);
     display: flex;
     justify-content: center;
@@ -622,7 +654,7 @@ footer{
 
 footer span {
     color: var(--grey);
-    font-size: 20px;
+    font-size: clamp( 1rem , 2vw , 1.25rem);
     font-weight: bolder;
 }
 
@@ -637,21 +669,23 @@ footer span {
     }
     .nav-list {
         position: absolute;
-        top: 8vh;
-        height: 90vh;
+        top: 9vh;
+        height: 50vh;
+        width: max-content;
         background-color: var(--matte-blue); 
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        transform: translate(130%);
+        transform: translate(150%);
         transition:  0.3s ease-in;
         padding: 16px;
         border-radius: 8px;
-        
+        border: solid 2px #434A55;
+        margin-right: 32px;
     }
 
     .nav-list li {
-        margin: 0;
+        margin-right: 0px;
         opacity: 0;
         
     }
@@ -687,6 +721,10 @@ footer span {
         transform: rotate(45deg) translate(-8px , -7px);
     }
 
+    .mobile-menu.active{
+        margin-right: 20px;
+    }
+
 
     .developer-activity{
         display: none;
@@ -710,11 +748,42 @@ footer span {
         justify-content: center;
     }
     
+    .container-means-of-contact{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .container-my-contact-two , .container-my-contact-one{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        
+    }
+
+    .container-my-contact-two span {
+        order: 1;
+    }
+
+    .container-my-contact-two  #text-linkdin{
+        width: clamp( 20rem , 60vw , 31.625rem);      
+    }
+
+    .menu-contacts nav ul li{
+        list-style: none;
+        color: var(--white);
+        font-size: clamp( 1.2rem , 2vw, 1.5rem);
+        font-weight: bold;
+        
+    }
 
 }
 
 
 @media (max-width: 800px){
+
     .container-short-presentation{
         background: var(--matte-blue);
     }

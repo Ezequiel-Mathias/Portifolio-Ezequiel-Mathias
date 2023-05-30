@@ -102,9 +102,7 @@ const TrainingCardWeb = ({ nome, video, tecnologias, descricao, funcaoExercida, 
             <h1>Website Adopet</h1>
 
             <div class="description">
-                <p> ${descricao} skdajd kdsjlksdja ksalkdsçla lçkasçlksdaç klasdçlska
-                dsjka~çldjs kljadsçlds jksd jksadlk jksa slkja saojdkajsd kj jashkdsh kasdlçkjkdsal jhnaslkdjsa ksadçlsdkç
-                sadkdlsçaka dlkjasçlksdja ajdslkasj ksjadlkdjsa kjlasdkldjs jklalkjsda kljasdlkjdsald lksdjalkasdj
+                <p> ${descricao}
                 </p>
             </div>
             
