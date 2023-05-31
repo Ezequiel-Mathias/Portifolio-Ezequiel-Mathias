@@ -3,79 +3,26 @@
 
 const ProjectsWeb = [
 
-    {
-        id: '1',
-        nome: 'Projeto de TCC Senai',
-        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/n1Czn608AQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-        tecnologias: 'React, SASS e Typescript ',
-        funcaoExercida: 'FrontEnd',
-        descricao: 'Site básico criado com a API da pixabey com o intuito de estudar sobre APIS.',
-        pagina: '',
-        github: '',
-    },
-
-    {
-        id: '2',
-        nome: 'Site Clone Pixabey',
-        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/n1Czn608AQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-        tecnologias: 'HTML, CSS e Javascript',
-        funcaoExercida: 'FrontEnd',
-        descricao: 'Site básico criado com a API da pixabey com o intuito de estudar sobre APIS.',
-        pagina: 'https://ezequiel-mathias.github.io/Consumo-API-Pixabay/',
-        github: 'https://github.com/Ezequiel-Mathias/Consumo-API-Pixabay',
-    },
-
-    {
-        id: '3',
-        nome: 'Consumo API via cep',
-        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/9oc0hkJylss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-        tecnologias: 'HTML, CSS e Javascript',
-        funcaoExercida: 'FrontEnd',
-        descricao: 'Simples consumo de API pública via cep',
-        pagina: 'https://ezequiel-mathias.github.io/ConsumoAPI-Cep/',
-        github: 'https://github.com/Ezequiel-Mathias/ConsumoAPI-Cep',
-    },
-
-    {
-        id: '3',
-        nome: 'Consumo API via cep',
-        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/9oc0hkJylss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-        tecnologias: 'HTML, CSS e Javascript',
-        funcaoExercida: 'FrontEnd',
-        descricao: 'Simples consumo de API pública via cep',
-        pagina: 'https://ezequiel-mathias.github.io/ConsumoAPI-Cep/',
-        github: 'https://github.com/Ezequiel-Mathias/ConsumoAPI-Cep',
-    },
-
-    {
-        id: '3',
-        nome: 'Consumo API via cep',
-        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/9oc0hkJylss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-        tecnologias: 'HTML, CSS e Javascript',
-        funcaoExercida: 'FrontEnd',
-        descricao: 'Simples consumo de API pública via cep',
-        pagina: 'https://ezequiel-mathias.github.io/ConsumoAPI-Cep/',
-        github: 'https://github.com/Ezequiel-Mathias/ConsumoAPI-Cep',
-    },
+ 
 
     
     {
         id: '3',
         nome: 'Consumo API via cep',
         video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/9oc0hkJylss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-        tecnologias: 'HTML, CSS e Javascript',
+        tecnologias: ['teste1'],
         funcaoExercida: 'FrontEnd',
         descricao: 'Simples consumo de API pública via cep',
         pagina: 'https://ezequiel-mathias.github.io/ConsumoAPI-Cep/',
         github: 'https://github.com/Ezequiel-Mathias/ConsumoAPI-Cep',
     },
 
-    
+
     {
         id: '3',
         nome: 'Consumo API via cep',
         video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/9oc0hkJylss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-        tecnologias: 'HTML, CSS e Javascript',
+        tecnologias: ['teste1222' , 'teste2'],
         funcaoExercida: 'FrontEnd',
         descricao: 'Simples consumo de API pública via cep',
         pagina: 'https://ezequiel-mathias.github.io/ConsumoAPI-Cep/',
@@ -131,17 +78,13 @@ const TrainingCardWeb = ({ nome, video, tecnologias, descricao, funcaoExercida, 
              <p>${descricao} skdajd dsjka~çldjs kljadsçlds jksd jksadlk jksa slkja saojdkajsd kj jashkdsh kasdlçkjkdsal jhnaslkdjsa </p>
             </div>
 
-            
-
             <div class="container-technologies">
+                
                 <div class="technologies">
-                    <span>React.js</span>
+                    <span>${tecnologias[0]}</span>
                 </div>
                 <div class="technologies">
-                    <span>SASS</span>
-                </div>
-                <div class="technologies">
-                    <span>Node.js</span>
+                    <span>${tecnologias[1]}</span>
                 </div>
                 <div class="technologies">
                     <span>Docker</span>
@@ -159,6 +102,7 @@ const TrainingCardWeb = ({ nome, video, tecnologias, descricao, funcaoExercida, 
                 <div class="technologies">
                     <span>React.js</span>
                 </div>
+                
             </div>
 
             

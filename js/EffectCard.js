@@ -1,11 +1,18 @@
 $('.more-information').on('click', function (evento) {
 
   const containerInformation = evento.currentTarget.parentElement.parentElement.parentElement.children[2]
-  
+
   containerInformation.style.visibility = "visible"
 
   const ButtonPaginaHref = containerInformation.children[1].children[0].attributes.href.nodeValue
   const ButtonGithubHref = containerInformation.children[1].children[1].attributes.href.nodeValue
+  
+  const Technologies = containerInformation;
+
+  $('.technologies').map((index, value) => {
+    const TechnologiesSpan = value.children[0].innerHTML;
+    
+  }) 
 
   if (!ButtonPaginaHref) {
     containerInformation.children[1].children[0].children[0].style.display = "none"
