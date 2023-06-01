@@ -1,38 +1,22 @@
 
 'use strict'
 
-const ProjectsWeb = [
-
- 
-
-    
-    {
+const Projects = [
+  
+  {
         id: '3',
-        nome: 'Consumo API via cep',
-        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/9oc0hkJylss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        nome: 'DevInt',
+        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/8-vUr_oP6o0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
         tecnologias: ['teste1'],
-        funcaoExercida: 'FrontEnd',
         descricao: 'Simples consumo de API pública via cep',
         pagina: 'https://ezequiel-mathias.github.io/ConsumoAPI-Cep/',
         github: 'https://github.com/Ezequiel-Mathias/ConsumoAPI-Cep',
-    },
-
-
-    {
-        id: '3',
-        nome: 'Consumo API via cep',
-        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/9oc0hkJylss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-        tecnologias: ['teste1222' , 'teste2'],
-        funcaoExercida: 'FrontEnd',
-        descricao: 'Simples consumo de API pública via cep',
-        pagina: 'https://ezequiel-mathias.github.io/ConsumoAPI-Cep/',
-        github: 'https://github.com/Ezequiel-Mathias/ConsumoAPI-Cep',
-    },
-
-
+    }, 
+    
+  
 ]
 
-const TrainingCardWeb = ({ nome, video, tecnologias, descricao, funcaoExercida, pagina, github }) => {
+const TrainingCard = ({ nome, video, tecnologias, descricao, pagina, github }) => {
 
     const card = document.createElement('div')
 
@@ -46,7 +30,7 @@ const TrainingCardWeb = ({ nome, video, tecnologias, descricao, funcaoExercida, 
     <div class="container-about-project">
 
         <div class="about-project">
-            <h1>Website Adopet</h1>
+            <h1>${nome}</h1>
 
             <div class="description">
                 <p> ${descricao}
@@ -86,26 +70,23 @@ const TrainingCardWeb = ({ nome, video, tecnologias, descricao, funcaoExercida, 
                 <div class="technologies">
                     <span>${tecnologias[1]}</span>
                 </div>
+
                 <div class="technologies">
-                    <span>Docker</span>
+                    <span>${tecnologias[2]}</span>
                 </div>
 
                 <div class="technologies">
-                    <span>Javascript</span>
+                    <span>${tecnologias[3]}</span>
+                </div>
+            
+                <div class="technologies">
+                    <span>${tecnologias[4]}</span>
                 </div>
                 <div class="technologies">
-                    <span>Next.js</span>
-                </div>
-                <div class="technologies">
-                    <span>React.js</span>
-                </div>
-                <div class="technologies">
-                    <span>React.js</span>
+                    <span>${tecnologias[5]}</span>
                 </div>
                 
             </div>
-
-            
 
         </div>
     
@@ -130,17 +111,17 @@ const TrainingCardWeb = ({ nome, video, tecnologias, descricao, funcaoExercida, 
 }
 
 
-const ToLoadCardWeb = (projects) => {
+const ToLoadCard = (projects) => {
 
     const container = document.querySelector('.container-cards-projects')
 
-    const cards = projects.map(TrainingCardWeb)
+    const cards = projects.map(TrainingCard)
 
     container.replaceChildren(...cards)
 
 }
 
-ToLoadCardWeb(ProjectsWeb)
+ToLoadCard(Projects)
 
 
 

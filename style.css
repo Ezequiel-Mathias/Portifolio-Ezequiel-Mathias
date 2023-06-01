@@ -589,6 +589,10 @@ header nav h1 {
     cursor: pointer;
 }
 
+#cell-phone:hover{
+    cursor: auto;
+}
+
 .container-means-of-contact span {
     color: var(--white);
     font-size: clamp(1rem, 1.5vw, 1.25rem);
