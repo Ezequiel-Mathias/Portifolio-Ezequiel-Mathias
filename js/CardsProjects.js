@@ -4,19 +4,20 @@
 const Projects = [
   
   {
-        id: '3',
-        nome: 'DevInt',
+        id: '1',
+        nome: 'Website-DevInt',
         video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/8-vUr_oP6o0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-        tecnologias: ['teste1'],
-        descricao: 'Simples consumo de API pública via cep',
-        pagina: 'https://ezequiel-mathias.github.io/ConsumoAPI-Cep/',
+        tecnologias: ['React.js', 'Typescript', 'SASS', 'Node.js' , 'Express.js', 'Docker'],
+        breveDescricao: 'Projeto de conclusão de curso do Senai, uma rede social para devs.',
+        descricao: 'Uma rede social somente para devs com o objetivo de fazer a conexão de pessoas que vivem nessa imerção tão incrivel que é o desenvolvimento de sistemas. Feito com diferentes tipos de funcionalidades que só a nossa plataforma DevInt tem !, como o compartilhamento de projetos, interação com o github, e muito mais.',
+        pagina: '',
         github: 'https://github.com/Ezequiel-Mathias/ConsumoAPI-Cep',
     }, 
     
   
 ]
 
-const TrainingCard = ({ nome, video, tecnologias, descricao, pagina, github }) => {
+const TrainingCard = ({ nome, video, tecnologias, descricao, breveDescricao, pagina, github }) => {
 
     const card = document.createElement('div')
 
@@ -33,7 +34,7 @@ const TrainingCard = ({ nome, video, tecnologias, descricao, pagina, github }) =
             <h1>${nome}</h1>
 
             <div class="description">
-                <p> ${descricao}
+                <p> ${breveDescricao}
                 </p>
             </div>
             
@@ -59,7 +60,7 @@ const TrainingCard = ({ nome, video, tecnologias, descricao, pagina, github }) =
             <h1>${nome}</h1>
 
             <div class="description">
-             <p>${descricao} skdajd dsjka~çldjs kljadsçlds jksd jksadlk jksa slkja saojdkajsd kj jashkdsh kasdlçkjkdsal jhnaslkdjsa </p>
+             <p>${descricao}</p>
             </div>
 
             <div class="container-technologies">
