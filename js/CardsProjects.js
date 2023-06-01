@@ -11,7 +11,7 @@ const Projects = [
         breveDescricao: 'Projeto de conclusão de curso do Senai, uma rede social para devs.',
         descricao: 'Uma rede social somente para devs com o objetivo de fazer a conexão de pessoas que vivem nessa imerção tão incrivel que é o desenvolvimento de sistemas. Feito com diferentes tipos de funcionalidades que só a nossa plataforma DevInt tem !, como o compartilhamento de projetos, interação com o github, e muito mais.',
         pagina: '',
-        github: 'https://github.com/Ezequiel-Mathias/ConsumoAPI-Cep',
+        github: 'https://github.com/Leop4rdo/devint-tcc',
     }, 
     
   
