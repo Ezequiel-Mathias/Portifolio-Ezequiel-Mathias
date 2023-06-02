@@ -596,7 +596,6 @@ header nav h1 {
     color: var(--white);
     font-size: clamp(0.9rem, 1.5vw, 1.25rem);
     font-weight: bold;
-    
 }
 
 .container-means-of-contact img {
