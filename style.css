@@ -578,11 +578,10 @@ header nav h1 {
     justify-content: right;
     align-items: center;
     width: max-content;
+    
 }
 
-.container-my-contact-two #text-linkdin {
-    width: max-content;
-}
+
 
 .container-means-of-contact .container-contact:hover {
     transform: scale(1.04);
@@ -595,8 +594,9 @@ header nav h1 {
 
 .container-means-of-contact span {
     color: var(--white);
-    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-size: clamp(0.9rem, 1.5vw, 1.25rem);
     font-weight: bold;
+    
 }
 
 .container-means-of-contact img {
@@ -739,7 +739,7 @@ footer span {
     }
 
     .container-my-contact-two #text-linkdin {
-        width: clamp(20rem, 60vw, 31.625rem);
+        width: clamp(18rem, 38vw, 31.625rem);
     }
 
     .menu-contacts nav ul li {
