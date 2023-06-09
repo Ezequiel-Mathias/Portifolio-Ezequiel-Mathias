@@ -2,19 +2,30 @@
 'use strict'
 
 const Projects = [
-  
-  {
-        id: '1',
+
+    {
+        id: '0',
         nome: 'Website-DevInt',
         video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/8-vUr_oP6o0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-        tecnologias: ['React.js', 'Typescript', 'SASS', 'Node.js' , 'Express.js', 'Docker'],
+        tecnologias: ['React.js', 'Typescript', 'SASS', 'Node.js', 'Express.js', 'Docker'],
         breveDescricao: 'Projeto de conclusão de curso do Senai, uma rede social para devs.',
         descricao: 'Uma rede social somente para devs com o objetivo de fazer a conexão de pessoas que vivem nessa imerção tão incrivel que é o desenvolvimento de sistemas. Feito com diferentes tipos de funcionalidades que só a nossa plataforma DevInt tem !, como o compartilhamento de projetos, interação com o github, e muito mais.',
         pagina: '',
         github: 'https://github.com/Leop4rdo/devint-tcc',
-    }, 
-    
-  
+    },
+
+    {
+        id: '1',
+        nome: 'Lista de tarefas',
+        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/yUPHfeGzoSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        tecnologias: ['Javascript', 'HTML5', 'CSS3'],
+        breveDescricao: 'Uma lista de tarefas com direfentes funcionalidades.',
+        descricao: 'Feita com o uso de local storage e com diferentes funções tais como, editar, apagar, filtrar e criar uma tarefa sua do dia.',
+        pagina: 'https://ezequiel-mathias.github.io/To-do-list/',
+        github: 'https://github.com/Ezequiel-Mathias/To-do-list',
+    },
+
+
 ]
 
 const TrainingCard = ({ nome, video, tecnologias, descricao, breveDescricao, pagina, github }) => {
