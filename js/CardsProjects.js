@@ -25,6 +25,16 @@ const Projects = [
         github: 'https://github.com/Ezequiel-Mathias/To-do-list',
     },
 
+    {
+        id: '2',
+        nome: 'MoviesLib',
+        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/recMZvC-jaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        tecnologias: ['React.js', 'Typescript', 'SASS'],
+        breveDescricao: 'Consumo API filmes tmdb, com algumas funcionalidades e recursos de pesquisa.',
+        descricao: 'Diferentes funções para você procurar aquele filme que você tanto quer ver e saber mais detalhes dele.',
+        pagina: 'https://ezequiel-mathias-project-movies-lib-nu.vercel.app/',
+        github: 'https://github.com/Ezequiel-Mathias/Project-Movies-Lib',
+    },
 
 ]
 

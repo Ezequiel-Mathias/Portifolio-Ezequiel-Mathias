@@ -16,10 +16,12 @@
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 body {
     background-color: var(--matte-blue);
+    
 }
 
 body::-webkit-scrollbar {
@@ -466,6 +468,7 @@ header nav h1 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
+    min-height: 40%;
 }
 
 .technologies {
