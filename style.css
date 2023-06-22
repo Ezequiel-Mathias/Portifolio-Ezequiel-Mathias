@@ -16,12 +16,10 @@
 
 html {
     scroll-behavior: smooth;
-    
 }
 
 body {
     background-color: var(--matte-blue);
-    
 }
 
 body::-webkit-scrollbar {
@@ -149,7 +147,6 @@ header nav h1 {
 .short-presentation p {
     color: var(--white);
     font-size: clamp(1rem, 2vw, 1.3rem);
-    ;
 }
 
 .short-presentation a {
@@ -167,10 +164,6 @@ header nav h1 {
     border-radius: 8px;
     color: var(--green-water);
     font-weight: bold;
-}
-
-.button-download-curriculum:hover {
-    cursor: pointer;
 }
 
 .developer-activity {
@@ -425,10 +418,6 @@ header nav h1 {
     justify-content: right;
 }
 
-.container-close-information img:hover {
-    cursor: pointer;
-}
-
 .information {
     height: 100%;
 }
@@ -588,10 +577,7 @@ header nav h1 {
     justify-content: right;
     align-items: center;
     width: max-content;
-    
 }
-
-
 
 .container-means-of-contact .container-contact:hover {
     transform: scale(1.04);
@@ -620,10 +606,6 @@ header nav h1 {
     gap: clamp(0.5rem, 1vw, 1rem);
 }
 
-.container-my-contact-one #container-cell-phone {
-    cursor: auto;
-}
-
 footer {
     margin-top: 168px;
     height: clamp(4rem, 10vw, 5.625rem);
@@ -638,6 +620,11 @@ footer span {
     color: var(--grey);
     font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: bolder;
+}
+
+.button-download-curriculum:hover
+,.container-close-information img:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 1025px) {
