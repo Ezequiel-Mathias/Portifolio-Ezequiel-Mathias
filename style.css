@@ -16,6 +16,7 @@
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 body {
@@ -43,6 +44,7 @@ header {
     top: 0%;
     z-index: 10;
 }
+
 
 header nav {
     display: flex;
@@ -151,6 +153,11 @@ header nav h1 {
 
 .short-presentation a {
     text-decoration: none;
+
+}
+
+.container-button-download-curriculum {
+    width: clamp(12rem, 16vw, 14.4rem);
 }
 
 .button-download-curriculum {
@@ -209,7 +216,7 @@ header nav h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    visibility: hidden;
+    
 }
 
 .about p {
@@ -258,14 +265,15 @@ header nav h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
     position: absolute;
-    visibility: hidden;
+    
+    justify-content: center;
+    
 }
 
 .profile-picture {
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 180px;
     border-radius: 100%;
     border: solid 5px var(--green-water);
     display: flex;
@@ -274,10 +282,17 @@ header nav h1 {
 }
 
 .picture {
-    height: 130px;
-    width: 130px;
+    height: 160px;
+    width: 160px;
     border-radius: 100%;
     background-color: var(--white);
+}
+
+.picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    
 }
 
 .profile-contacts h1 {
@@ -286,19 +301,22 @@ header nav h1 {
     font-size: clamp(1.4rem, 2vw, 1.5rem);
 }
 
-.profile-contacts .contacts {
+ .contacts {
     margin-top: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: clamp(1.3rem, 1.5vw, 2rem);
+    position: relative;
 }
+
+
 
 .profile-contacts .contacts img {
     width: clamp(1.7rem, 3vw, 2rem);
 }
 
-.profile-contacts .contacts img:hover {
+.contacts img:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -584,7 +602,7 @@ header nav h1 {
     cursor: pointer;
 }
 
-#cell-phone:hover{
+#cell-phone:hover {
     cursor: auto;
 }
 
@@ -608,7 +626,7 @@ header nav h1 {
 
 footer {
     margin-top: 168px;
-    height: clamp(4rem, 10vw, 5.625rem);
+    height: clamp(4rem, 10vw, 5rem);
     background-color: var(--dark-blue);
     display: flex;
     justify-content: center;
@@ -622,8 +640,8 @@ footer span {
     font-weight: bolder;
 }
 
-.button-download-curriculum:hover
-,.container-close-information img:hover {
+.button-download-curriculum:hover,
+.container-close-information img:hover {
     cursor: pointer;
 }
 
