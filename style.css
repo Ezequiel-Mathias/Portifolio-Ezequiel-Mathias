@@ -130,7 +130,7 @@ header nav h1 {
 
 .short-presentation {
     width: 550px;
-    visibility: hidden;
+    
 }
 
 .short-presentation span {
@@ -176,8 +176,7 @@ header nav h1 {
 .developer-activity {
     width: 722px;
     display: flex;
-    justify-content: right;
-    visibility: hidden;
+    justify-content: right; 
 }
 
 .developer-activity img {
@@ -329,7 +328,7 @@ header nav h1 {
     align-items: center;
     gap: 56px;
     flex-wrap: wrap;
-    visibility: hidden;
+    
 }
 
 .skill {
@@ -361,7 +360,7 @@ header nav h1 {
     flex-direction: column;
     min-width: 17rem;
     padding: 16px;
-    visibility: hidden;
+    
 }
 
 .container-projects {
@@ -557,7 +556,7 @@ header nav h1 {
     font-weight: bolder;
     font-size: clamp(1rem, 2vw, 1.3rem);
     margin-bottom: 144px;
-    visibility: hidden;
+    
 }
 
 .container-means-of-contact {
@@ -565,7 +564,7 @@ header nav h1 {
     display: flex;
     justify-content: space-between;
     height: 216px;
-    visibility: hidden;
+    
 }
 
 .container-my-contact-one {
