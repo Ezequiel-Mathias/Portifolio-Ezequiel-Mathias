@@ -54,6 +54,16 @@ const Projects = [
         descricao: 'Página de login base para ser utilizada de diferentes formas.',
         pagina: 'https://login-page-one-tau.vercel.app/',
         github: 'https://github.com/Ezequiel-Mathias/Login-Page',
+    },
+    {
+        id: '5',
+        nome: 'Projeto Vero Card',
+        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/k5NCQV1i5EY?si=333WeKs_cKltBqya" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        tecnologias: ['React.js', 'Typescript', 'SASS', 'PHP', 'Slim 3.0' , 'mysql'],
+        breveDescricao: 'Desenvolvido para acompanhar a fabricação dos cartões para os clientes da UP! Technology.',
+        descricao: 'Feito com autentição por bearer token JWT com proteção de todas as rotas conforme o nível do usuário na aplicação.',
+        pagina: '',
+        github: 'https://github.com/Ezequiel-Mathias/project-vero-card-up-tec',
     }
 
 ]
