@@ -35,6 +35,26 @@ const Projects = [
         pagina: 'https://ezequiel-mathias-project-movies-lib-nu.vercel.app/',
         github: 'https://github.com/Ezequiel-Mathias/Project-Movies-Lib',
     },
+    {
+        id: '3',
+        nome: 'Feliz Natal',
+        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/AAqXnQqcYpk?si=asvyVMNCWgLsrKiT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        tecnologias: ['React.js', 'Typescript', 'SASS'],
+        breveDescricao: 'Com o intuito de comemoração e a ideia de fazer doações.',
+        descricao: 'Nas festas de fim de ano mande um presente para a pessoa amada e compartilhe a alegria do Natal.',
+        pagina: 'https://feliz-natal-ezequiel-mathias.vercel.app/',
+        github: 'https://github.com/Ezequiel-Mathias/Feliz-Natal',
+    },
+    {
+        id: '4',
+        nome: 'Página de login',
+        video: '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/CxqA0KYggbw?si=Uj93HjO12ex8TdLf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        tecnologias: ['React.js', 'Typescript', 'SASS'],
+        breveDescricao: 'Uma ideia de uma página de login para utilizar em qualquer projeto.',
+        descricao: 'Página de login base para ser utilizada de diferentes formas.',
+        pagina: 'https://login-page-one-tau.vercel.app/',
+        github: 'https://github.com/Ezequiel-Mathias/Login-Page',
+    }
 
 ]
 
